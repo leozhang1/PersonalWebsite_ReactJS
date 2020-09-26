@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/PersonalWebsite_ReactJS/static/css/main.f54ed2fe.chunk.css",
+    "main.js": "/PersonalWebsite_ReactJS/static/js/main.a199e339.chunk.js",
+    "main.js.map": "/PersonalWebsite_ReactJS/static/js/main.a199e339.chunk.js.map",
+    "runtime-main.js": "/PersonalWebsite_ReactJS/static/js/runtime-main.f12c9047.js",
+    "runtime-main.js.map": "/PersonalWebsite_ReactJS/static/js/runtime-main.f12c9047.js.map",
+    "static/js/2.8fc5d9a0.chunk.js": "/PersonalWebsite_ReactJS/static/js/2.8fc5d9a0.chunk.js",
+    "static/js/2.8fc5d9a0.chunk.js.map": "/PersonalWebsite_ReactJS/static/js/2.8fc5d9a0.chunk.js.map",
+    "index.html": "/PersonalWebsite_ReactJS/index.html",
+    "precache-manifest.0f3dfb25f85c26972391911abd635c74.js": "/PersonalWebsite_ReactJS/precache-manifest.0f3dfb25f85c26972391911abd635c74.js",
+    "service-worker.js": "/PersonalWebsite_ReactJS/service-worker.js",
+    "static/css/main.f54ed2fe.chunk.css.map": "/PersonalWebsite_ReactJS/static/css/main.f54ed2fe.chunk.css.map",
+    "static/js/2.8fc5d9a0.chunk.js.LICENSE.txt": "/PersonalWebsite_ReactJS/static/js/2.8fc5d9a0.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/PersonalWebsite_ReactJS/static/media/mountain.08236269.jpg",
+    "static/media/selfie.jpeg": "/PersonalWebsite_ReactJS/static/media/selfie.b3bb5d90.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f12c9047.js",
+    "static/js/2.8fc5d9a0.chunk.js",
+    "static/css/main.f54ed2fe.chunk.css",
+    "static/js/main.a199e339.chunk.js"
+  ]
+}
