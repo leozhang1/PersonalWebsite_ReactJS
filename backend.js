@@ -63,7 +63,7 @@ function HandlePostRequest()
             // process.env.EMAIL
             from: req.body.email, // sender address
             to: 'leo1997.work@gmail.com', // list of receivers
-            cc: 'brandi.00@outlook.com',
+            // cc: 'brandi.00@outlook.com',
             subject: 'Node Contact Request', // Subject line
             text: req.body.message, // plain text body
 

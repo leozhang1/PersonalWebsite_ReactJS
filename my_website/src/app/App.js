@@ -67,6 +67,9 @@ export default function App()
   );
 }
 
+// type: npm run dev in the terminal to start
+
+
 
 
 

@@ -5,6 +5,16 @@ import propTypes from 'prop-types';
 import Input from './Input/input';
 import './form.css';
 import axios from 'axios';
+import { makeStyles } from '@material-ui/core/styles';
+import Popover from '@material-ui/core/Popover';
+import Typography from '@material-ui/core/Typography';
+
+
+const useStyles = makeStyles((theme) => ({
+    typography: {
+        padding: theme.spacing(3),
+    },
+}));
 
 
 // jshint ignore : start
@@ -72,6 +82,9 @@ export default function Form(props)
         // refreshing the page
         event.preventDefault();
 
+        // signals the popover
+        handleClick(event);
+
         // bundle up information to send to the back-end
         // in an object
         const sendToBackend =
@@ -91,7 +104,7 @@ export default function Form(props)
         };
 
         // use axios to send the data to the back-end
-       await axios.post(`/api/sendMail`, sendToBackend);
+        await axios.post(`/api/sendMail`, sendToBackend);
 
     }
 
@@ -103,6 +116,22 @@ export default function Form(props)
         phone: `phone`,
         message: `message`
     };
+
+    const classes = useStyles();
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleClick = (event) =>
+    {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () =>
+    {
+        setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
 
     return (
         <div className="centerForm" style={{ display: on ? "block" : "none" }}>
@@ -134,6 +163,23 @@ export default function Form(props)
                         </div>
 
                         <button type="submit" onClick={HandleSubmit} className="btn btn-light btn-block">Send Message</button>
+
+                        <Popover
+                            id={id}
+                            open={open}
+                            anchorEl={anchorEl}
+                            onClose={handleClose}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'center',
+                            }}
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'center',
+                            }}
+                        >
+                            <Typography className={classes.typography}>Thank you. Your message has been sent!</Typography>
+                        </Popover>
 
                     </div>
 
