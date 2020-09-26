@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/heading.css';
+import './heading.css';
 
 // style={{backgroundColor: "yellow"}}
 

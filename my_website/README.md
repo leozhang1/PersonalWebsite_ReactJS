@@ -1,3 +1,6 @@
+NOTE: front-end contents inside my_website folder
+everything else is associated with the backend
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
